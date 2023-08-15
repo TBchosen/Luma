@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg_color_1: #5B0017;
+    --bg_color_2: #844051;
+    --bg_color_3: #AD808B;
+    --bg_color_4: #D6BFC5;
+    --secondary_1: #CC9D2F;
+    --secondary_2: #D8B663;
+    --secondary_3: #E5CE97;
+    --secondary_4: #F2E7CB;
+}
+
+header {
+    display: flex;
+    /* position: sticky; */
+    background: var(--bg_color_1);
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    left: 20px;
+    margin-left: 100px;
+}
