@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background: var(--bg_color_1);
 }
 
 :root {
@@ -17,15 +18,45 @@
 
 header {
     display: flex;
-    /* position: sticky; */
-    background: var(--bg_color_1);
+    position: sticky;
     height: 50px;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 5%;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: var(--secondary_1);
+    border: none;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
 }
 
 .logo {
-    left: 20px;
-    margin-left: 100px;
+    color: white;
+}
+
+.half_star {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    background-color: var(--secondary_1);
 }
