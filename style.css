@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,10 +40,12 @@ header {
 
 .navbar li a {
     transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: #D6BFC5  ;
 }
 
 .navbar li a:hover {
-    color: #0088a9;
+    color: var(--secondary_1);
 }
 
 button {
@@ -51,7 +57,23 @@ button {
 }
 
 .logo {
-    color: white;
+    display: grid;
+    place-items: center;
+    font-family: 'Dancing Script', sans-serif;
+    /* font-family: 'Tilt Prism', cursive; */
+    font-weight: 400;
+    font-size: 40px;
+    color: #ffd9e2;
+    text-shadow: 0 0 0 transparent,
+                0 0 10px #ff003c,
+                0 0 20px rgba(255, 0, 60, .5),
+                0 0 40px #ff003c,
+                0 0 100px #ff003c,
+                0 0 200px #ff003c,
+                0 0 300px #ff003c,
+                0 0 500px #ff003c,
+                0 0 1000px #ff003c;
+    animation: animate 3s infinite alternate;
 }
 
 .half_star {
@@ -69,7 +91,17 @@ button {
 }
 
 .landing_page {
-    top: 50px;
+    position: relative;
+    top: 100px;
     left: 50px;
-    
+}
+
+.landing_page h1 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+.landing_page h6 {
+    color: white;
+    font-size: .9rem;
 }
