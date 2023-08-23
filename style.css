@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Tilt+Prism&display=swap');
 
 * {
     box-sizing: border-box;
@@ -57,12 +58,33 @@ button {
 }
 
 .logo {
-    display: grid;
+    display: flexbox;
     place-items: center;
     font-family: 'Dancing Script', sans-serif;
     /* font-family: 'Tilt Prism', cursive; */
     font-weight: 400;
-    font-size: 40px;
+    font-size: 25px;
+    color: #ffd9e2;
+    text-shadow: 0 0 0 transparent,
+                0 0 10px #CC9D2F,
+                0 0 20px rgba(204, 157, 47, .5),
+                0 0 40px #CC9D2F,
+                0 0 100px #CC9D2F,
+                0 0 200px #CC9D2F,
+                0 0 300px #CC9D2F,
+                0 0 500px #CC9D2F,
+                0 0 1000px #CC9D2F;
+    animation: animate 3s infinite alternate;
+    z-index: 100;
+}
+
+.logo :nth-child(1) {
+    display: grid;
+    place-items: center;
+    font-family: 'Dancing Script', sans-serif;
+    /* font-family: 'Tilt Prism', cursive; */
+    font-weight: 100;
+    font-size: 15px;
     color: #ffd9e2;
     text-shadow: 0 0 0 transparent,
                 0 0 10px #ff003c,
@@ -76,32 +98,23 @@ button {
     animation: animate 3s infinite alternate;
 }
 
-.half_star {
-    height: 50px;
-    width: 50px;
-    background: transparent;
-    background-color: var(--secondary_1);
-}
-
-.circle {
-    content: '';
-    display: flex;
-    height: 20px;
-    width: 20px;
-}
-
-.landing_page {
-    position: relative;
-    top: 100px;
+.bole {
+    position: absolute;
+    background: rgba(255, 0, 60, .5);
+    top: 150px;
     left: 50px;
 }
 
-.landing_page h1 {
+.bole h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+.bole h1 {
     font-size: 3.5rem;
     color: white;
 }
 
-.landing_page h6 {
+.bole h6 {
     color: white;
     font-size: .9rem;
 }
