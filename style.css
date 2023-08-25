@@ -11,7 +11,7 @@
 }
 
 :root {
-    --bg_color_1: #5B0017;
+    --bg_color_1: #5b0017;
     --bg_color_2: #844051;
     --bg_color_3: #AD808B;
     --bg_color_4: #D6BFC5;
@@ -100,21 +100,109 @@ button {
 
 .bole {
     position: absolute;
-    background: rgba(255, 0, 60, .5);
-    top: 150px;
-    left: 50px;
+    background: rgba(91, 0, 23, 0);
+    top: 200px;
+    left: 100px;
+    z-index: 2;
+
 }
 
-.bole h1 {
+.bole p {
     font-family: 'Nunito', sans-serif;
-}
-
-.bole h1 {
-    font-size: 3.5rem;
+    background: rgba(91, 0, 23, .5);
+    width: 800px;
+    font-weight: 800;
+    font-size: 4rem;
     color: white;
+    letter-spacing: 7px;
+    justify-content: center;
+    align-items: center;
 }
 
 .bole h6 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 100;
+    background: transparent;
     color: white;
     font-size: .9rem;
+    width: 400px;
+    letter-spacing: 1px;
+}
+
+.addis {
+    position: absolute;
+    left: 45%;
+    top: 120px;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.background_vector_abstract {
+    position: absolute;
+}
+
+.star {
+    position: relative;
+    top: 34px;
+    left: 1182px;
+    height: 50px;
+    width: 50px;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.star:hover {
+    cursor: pointer;
+    transform: rotateZ(3600deg);
+    transition: 4s;
+}
+
+.our-menu {
+    position: relative;
+    top: 40px;
+    font-family: 'nunito', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--secondary_1);
+    border: 2px solid var(--secondary_1);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.luma_img {
+    position: absolute;
+    top: 700px;
+    left: 100px;
+    height: 600px;
+    width: 400px;
+}
+
+.venue {
+    position: absolute;
+    top: 700px;
+    left: 600px;
+}
+
+.venue h6 {
+    font-family: 'nunito', sans-serif;
+    font-weight: 100;
+    background: transparent;
+    color: white;
+    font-size: .9rem;
+    width: 400px;
+    letter-spacing: 1px;
+}
+
+.venue p {
+    font-family: 'Nunito', sans-serif;
+    background: rgba(91, 0, 23, .5);
+    width: 700px;
+    font-weight: 200;
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 7px;
+    justify-content: center;
+    align-items: center;
 }
