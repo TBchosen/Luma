@@ -35,6 +35,8 @@ header {
 }
 
 .navbar li {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
     display: inline-block;
     padding: 0 50px;
 }
@@ -49,12 +51,19 @@ header {
     color: var(--secondary_1);
 }
 
-button {
+.Book {
+    cursor: pointer;
     padding: 9px 25px;
     background-color: var(--secondary_1);
+    color: var(--bg_color_1);
     border: none;
     border-radius: 2px;
-    transition: all 0.3s ease 0s;
+    transition: .5s;
+    box-shadow: 5px 5px 10px black;
+}
+
+.Book:hover {
+    box-shadow: 1px 1px;    
 }
 
 .logo {
@@ -176,7 +185,7 @@ button {
     top: 700px;
     left: 100px;
     height: 600px;
-    width: 400px;
+    width: 450px;
 }
 
 .venue {
@@ -188,9 +197,10 @@ button {
 .venue h6 {
     font-family: 'nunito', sans-serif;
     font-weight: 100;
+    margin-top: 20px;
     background: transparent;
     color: white;
-    font-size: .9rem;
+    font-size: 1rem;
     width: 400px;
     letter-spacing: 1px;
 }
@@ -200,9 +210,76 @@ button {
     background: rgba(91, 0, 23, .5);
     width: 700px;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     letter-spacing: 7px;
-    justify-content: center;
-    align-items: center;
+}
+
+.background_vector_abstract_2 {
+    position: relative;
+    left: 720px;
+    top: 516px;
+    z-index: -1;
+}
+
+.luma_img, .addis {
+    cursor: pointer;
+    border: .5px solid var(--secondary_1);
+    border-radius: 10px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.4), 0 24px 80px 0 rgba(0, 0, 0, 0.38);
+    transition: 1s;
+}
+
+.luma_img:hover, .addis:hover {
+    box-shadow: 1px 1px;
+}
+
+.venue a {
+    position: absolute;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+    padding: 10px 30px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: var(--bg_color_1);
+    background-color: var(--secondary_1);
+    border: none;
+    border-radius: 2px;
+    transition: .5s;
+    box-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+}
+
+.venue a:hover {  
+    box-shadow: 2px 2px 10px black
+}   
+
+.restaurant-images {
+    position: absolute;
+    top: 1100px;
+    left: 600px;
+}
+
+.restaurant-images img {
+    cursor: pointer;
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    border: .1px solid var(--secondary_1);
+}
+
+.line {
+    height: 2px;
+    width: 400px;
+    margin-top: 60px;
+    border: .5px solid var(--secondary_1);
+    transition: 10s;
+}
+
+.restaurant-images img:hover {
+    /* height: 2px; */
+    width: 100px;
+    /* margin-top: 60px; */
+    /* border: .5px solid var(--secondary_1); */
 }
