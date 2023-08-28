@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 0 0 0;
     padding: 0;
     background: var(--bg_color_1);
 }
@@ -274,12 +274,13 @@ header {
     width: 400px;
     margin-top: 60px;
     border: .5px solid var(--secondary_1);
-    transition: 10s;
+    transition: 5s;
 }
 
-.restaurant-images img:hover {
-    /* height: 2px; */
-    width: 100px;
-    /* margin-top: 60px; */
-    /* border: .5px solid var(--secondary_1); */
+.first_img:hover + .line {
+    width: 200px;
+}
+
+.line:active {
+    width: 200px;
 }
