@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 * {
     box-sizing: border-box;
@@ -283,4 +284,39 @@ header {
 
 .line:active {
     width: 200px;
+}
+
+.reviewer {
+    position: absolute;
+    color: white;
+    background: var(--secondary_1);
+    top: 1400px;
+    left: 100px;
+    width: 1000px;
+    height: 400px;   
+    z-index: -1;
+}
+
+.review span {
+    font-family: 'Black Ops One', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+    top: 1400px;
+    left: 100px;
+    width: 1000px;
+    height: 400px;
+}
+
+.review .reviewer_info {
+    position: relative; 
+    top: 350px;
+}
+
+.food_image {
+    position: absolute;
+    top: 1420px;
+    left: 100px;
+    height: 350px;
+    width: 600px;
 }
