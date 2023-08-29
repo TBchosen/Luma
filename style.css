@@ -286,37 +286,32 @@ header {
     width: 200px;
 }
 
-.reviewer {
-    position: absolute;
-    color: white;
+.review_box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80px 200px ;
+    max-width: 1000px;
+    left: 180px;
+    top: 500px;
     background: var(--secondary_1);
-    top: 1400px;
-    left: 100px;
-    width: 1000px;
-    height: 400px;   
-    z-index: -1;
-}
-
-.review span {
-    font-family: 'Black Ops One', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    color: white;
-    top: 1400px;
-    left: 100px;
-    width: 1000px;
-    height: 400px;
-}
-
-.review .reviewer_info {
-    position: relative; 
-    top: 350px;
 }
 
 .food_image {
-    position: absolute;
-    top: 1420px;
-    left: 100px;
-    height: 350px;
-    width: 600px;
+    position: relative;
+    max-width: 500px;
+    max-height: 400px;
+    /* left: 500px; */
+}
+
+.review_box > * {
+    background: var(--secondary_1);
+}
+
+.quotes, .name, .occupation, .comment {
+    background: inherit;
+}
+
+.details {
+    position: relative;
+    width: 500px;
 }
