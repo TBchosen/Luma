@@ -253,7 +253,7 @@ header {
 }
 
 .venue a:hover {  
-    box-shadow: 2px 2px 10px black
+    box-shadow: 2px 2px 10px black;
 }   
 
 .restaurant-images {
@@ -289,13 +289,15 @@ header {
 .review_box {
     position: relative;
     display: flex;
-    border-radius: 4px 4px;
+    border-radius: 8px;
     flex-direction: column;
     width: 1130px;
     height: 450px;
-    left: 120px;
+    left: 100px;
     top: 500px;
     background: var(--secondary_1);
+    overflow: hidden;
+    box-shadow: 1px 1px 8px black;
 }
 
 .food_image {
@@ -333,7 +335,9 @@ header {
 
 .name, .occupation {
     position: relative;
-    top: 250px;
+    margin: 0px;
+    padding: 0px;
+    top: 270px;
     left: 100px;
     width: 100px;
     font-family: 'nunito', sans-serif;
@@ -345,9 +349,9 @@ header {
 .circular_face {
     position: absolute;
     top: 300px;
-    left: 450px;
-    width: 40px;
-    height: 40px;
+    left: 443px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -369,17 +373,46 @@ header {
     border: .1px solid #243054;
 }
 
+.half_star {
+    position: absolute;
+    background-color: inherit;
+    top: 330px;
+}
+
 .image_box {
     position: relative;
-    width: 100vw;
+    width: 1000px;
     height: 600px;
     left: 0;
     top: 600px;
+    background-color: rgba(255, 0, 60, .2);
 }
 
 .full_width_image {
     position: absolute;
-    width: 100vw;
+    width: 1349px;
     height: 600px;
+    z-index: -1;
+}
 
+.img_writing, .star2, svg, .image_box, a {
+    background: transparent;
+}
+
+.gradient_image {
+    position: absolute;
+    /* top: 200px; */
+    width: 1349px;
+    height: 600px;
+    background-image: linear-gradient(0deg, var(--bg_color_1), transparent);
+    background-color: rgba(255, 0, 60, 0);
+}
+
+
+.copyright {
+    position: relative;
+    top: 600px;
+    height: 400px;
+    background: var(--secondary_1);
+    z-index: 1;
 }
