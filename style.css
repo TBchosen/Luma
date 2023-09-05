@@ -314,7 +314,7 @@ header {
 .comment {
     position: relative;
     top: 50px;
-    left: 130px;
+    left: 110px;
     font-family: 'nunito', sans-serif ;
     font-size: 24px;
     font-weight: 800;
@@ -341,7 +341,7 @@ header {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid var(--bg_color_4);
+    border: 1px solid var(--secondary_1);
 }
 
 .tinline {
@@ -461,3 +461,47 @@ header {
     height: 50px;
     overflow: hidden;
 }
+
+.star2 {
+    top: 100px;
+    left: 630px
+}
+
+.summary {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 300px;
+    left: 370px;
+    font-family: 'nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    max-width: 600px;
+    color: whitesmoke;
+    justify-self: center;
+    align-items: center;
+}
+
+.final_summary {
+    background: transparent;
+}
+
+.final_summary a {
+    position: absolute;
+    top: 400px;
+    left: 590px;
+    font-family: 'nunito', sans-serif;
+    max-width: 600px;
+    color: var(--secondary_1);    
+    padding: 10px 30px;
+    margin-top: 50px;
+    text-decoration: none;
+    color: var(--bg_color_1);
+    background-color: var(--secondary_1);
+    border: none;
+    border-radius: 2px;
+    transition: .5s;
+    box-shadow: 1px 1px 2px black;
+    letter-spacing: 2px;
+}
+
