@@ -16,6 +16,7 @@
     --bg_color_2: #844051;
     --bg_color_3: #AD808B;
     --bg_color_4: #D6BFC5;
+    --bg_color_5: rgb(70, 0, 17);
     --secondary_1: #CC9D2F;
     --secondary_2: #D8B663;
     --secondary_3: #E5CE97;
@@ -61,14 +62,15 @@ header {
     border: none;
     border-radius: 2px;
     transition: .5s;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 1px 10px black;
 }
 
 .Book:hover {
-    box-shadow: 1px 1px;    
+    box-shadow: 5px 5px 10px black;    
 }
 
 .logo {
+    cursor: pointer;
     background: var(--bg_color_1);
     border: 1px solid var(--secondary_2);
     border-radius: 10px;
@@ -93,6 +95,23 @@ header {
                 0 0 300px #ff003c,
                 0 0 500px #ff003c,
                 0 0 1000px #ff003c;
+    animation: animate 3s infinite alternate;
+}
+
+.logo:hover {
+    cursor: pointer;
+    background: var(--bg_color_1);
+    border: 1px solid var(--secondary_1);
+    border-radius: .375rem;
+    text-shadow: 0 0 0 transparent,
+                0 0 10px #0011ff,
+                0 0 20px rgba(0, 17, 255, .5),
+                0 0 40px #0011ff,
+                0 0 100px #0011ff,
+                0 0 200px #0011ff,
+                0 0 300px #0011ff,
+                0 0 500px #0011ff,
+                0 0 1000px #0011ff;
     animation: animate 3s infinite alternate;
 }
 
@@ -205,24 +224,6 @@ header {
     letter-spacing: 7px;
 }
 
-.background_vector_abstract_2 {
-    position: relative;
-    left: 720px;
-    top: 756px;
-}
-
-.luma_img, .addis {
-    cursor: pointer;
-    border: .5px solid var(--secondary_1);
-    border-radius: 10px;
-    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.4), 0 24px 80px 0 rgba(0, 0, 0, 0.38);
-    transition: 1s;
-}
-
-.luma_img:hover, .addis:hover {
-    box-shadow: 1px 1px;
-}
-
 .venue a {
     position: absolute;
     cursor: pointer;
@@ -241,8 +242,26 @@ header {
 }
 
 .venue a:hover {  
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 4px 4px 5px black;
 }   
+
+.background_vector_abstract_2 {
+    position: relative;
+    left: 720px;
+    top: 756px;
+}
+
+.luma_img, .addis {
+    cursor: pointer;
+    border: .5px solid var(--secondary_1);
+    border-radius: 10px;
+    box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.4), 0 24px 80px 0 rgba(0, 0, 0, 0.38);
+    transition: 1s;
+}
+
+.luma_img:hover, .addis:hover {
+    box-shadow: 1px 1px;
+}
 
 .restaurant-images {
     position: absolute;
@@ -257,6 +276,12 @@ header {
     width: 125px;
     margin-right: 20px;
     border: .1px solid var(--secondary_1);
+    transition: .5s;
+    border-radius: .5rem;
+}
+
+.first_img:hover, .second_img:hover, .third_img:hover {
+    border-radius: 0;
 }
 
 .line {
@@ -391,11 +416,13 @@ header {
 
 .gradient_image {
     position: absolute;
-    /* top: 200px; */
+    /* top: 50px; */
     width: 1349px;
-    height: 1000px;
-    background-image: linear-gradient(180deg, transparent, var(--bg_color_1));
+    height: 662px;
+    /* background: var(--bg_color_1); */
+    background-image: linear-gradient(180deg, transparent, var(--bg_color_5));
     background-color: rgba(255, 0, 60, 0);
+    z-index: 10;
 }
 
 .copyright {
@@ -410,6 +437,14 @@ header {
     position: relative;
     justify-content: center;
     align-items: center;
+}
+
+.summary, a, .star2, .zigzag_svg svg {
+    z-index: 20;
+}
+
+.zigzag1 svg {
+    background: transparent;
 }
 
 .zigzag_svg {
@@ -473,14 +508,13 @@ header {
     margin: 0;
     padding: 0;
     top: 300px;
-    left: 370px;
+    left: 380px;
     font-family: 'nunito', sans-serif;
     font-size: 36px;
     font-weight: 800;
     max-width: 600px;
-    color: whitesmoke;
-    justify-self: center;
-    align-items: center;
+    color: white;
+    text-align: center;
 }
 
 .final_summary {
@@ -492,6 +526,7 @@ header {
     top: 400px;
     left: 590px;
     font-family: 'nunito', sans-serif;
+    font-weight: 800;
     max-width: 600px;
     color: var(--secondary_1);    
     padding: 10px 30px;
@@ -504,16 +539,24 @@ header {
     transition: .5s;
     box-shadow: 1px 1px 2px black;
     letter-spacing: 2px;
+    transition: 1s;
+    align-items: center;
+}
+.final_summary a:hover {
+    box-shadow: 4px 4px 8px black;
+    color: var(--bg_color_1);
+    font-weight: 800;
 }
 
 .final_logo {
     position: absolute;
+    cursor: pointer;
     top: 30px;
     left: 630px;
-    background: #333;
+    background: var(--bg_color_1);
     border: 1px solid var(--secondary_2);
     border-radius: .375rem;
-    }
+}
 
 .final_logo {
     display: grid;
@@ -524,6 +567,7 @@ header {
     /* font-family: 'Tilt Prism', cursive; */
     font-weight: 100;
     font-size: 26px;
+    border: 1px solid var(--bg_color_2);
     color: #ffd9e2;
     text-shadow: 0 0 0 transparent,
                 0 0 10px #ff003c,
@@ -534,6 +578,26 @@ header {
                 0 0 300px #ff003c,
                 0 0 500px #ff003c,
                 0 0 1000px #ff003c;
+    animation: animate 3s infinite alternate;
+}
+
+.final_logo:hover {
+    position: absolute;
+    cursor: pointer;
+    top: 30px;
+    left: 630px;
+    background: var(--bg_color_1);
+    border: 1px solid var(--bg_color_2);
+    border-radius: .375rem;
+    text-shadow: 0 0 0 transparent,
+                0 0 10px #0011ff,
+                0 0 20px rgba(0, 17, 255, .5),
+                0 0 40px #0011ff,
+                0 0 100px #0011ff,
+                0 0 200px #0011ff,
+                0 0 300px #0011ff,
+                0 0 500px #0011ff,
+                0 0 1000px #0011ff;
     animation: animate 3s infinite alternate;
 }
 
@@ -557,7 +621,7 @@ header {
 }
 
 .copyright li a:hover {
-    color: var(--bg_color_1);
+    color: #3362d0;
 }
 
 .list {
@@ -572,7 +636,7 @@ header {
 .ARR {
     font-family: 'nunito', sans-serif;
     position: absolute;
-    top: 305px;
+    top: 320px;
     left: 80px;
     background: var(--secondary_1);
     color: var(--text);
@@ -580,16 +644,16 @@ header {
 
 .social_line {
     position: absolute;
-    top: 210px;
-    height: 2px;
+    top: 240px;
+    height: .5px;
     width: 100%;
     margin-top: 60px;
-    border: .5px solid var(--bg_color_3);
+    border: .1px solid var(--bg_color_3);
 }
 
 .socials {
     position: absolute;
-    top: 305px;
+    top: 320px;
     left: 570px;
     background: var(--secondary_1);
 }
