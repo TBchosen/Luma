@@ -6,7 +6,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
     background: var(--bg_color_1);
 }
@@ -74,7 +74,8 @@ header {
     background: var(--bg_color_1);
     border: 1px solid var(--secondary_2);
     border-radius: 10px;
-    }
+    transition: .2s;
+}
 
 .logo {
     display: grid;
@@ -308,7 +309,7 @@ header {
     width: 1130px;
     height: 450px;
     left: 100px;
-    top: 500px;
+    top: 450px;
     background: var(--secondary_1);
     overflow: hidden;
     box-shadow: 1px 1px 8px black;
@@ -416,9 +417,9 @@ header {
 
 .gradient_image {
     position: absolute;
-    /* top: 50px; */
+    top: 10px;
     width: 1349px;
-    height: 662px;
+    height: 652px;
     /* background: var(--bg_color_1); */
     background-image: linear-gradient(180deg, transparent, var(--bg_color_5));
     background-color: rgba(255, 0, 60, 0);
@@ -657,3 +658,16 @@ header {
     left: 570px;
     background: var(--secondary_1);
 }
+
+.footer {
+    position: absolute;
+    top: 3200px;
+}
+
+.foot_container {
+    /* position: relative; */
+    max-width: 1170px;
+    background-color: var(--secondary_1);
+    margin: auto;
+}
+
