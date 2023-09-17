@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: var(--secondary_1);
+}
+
+:root {
+    --bg_color_1: #5b0017;
+    --bg_color_2: #844051;
+    --bg_color_3: #AD808B;
+    --bg_color_4: #D6BFC5;
+    --bg_color_5: rgb(70, 0, 17);
+    --secondary_1: #CC9D2F;
+    --secondary_2: #D8B663;
+    --secondary_3: #E5CE97;
+    --secondary_4: #F2E7CB;
+    --text: #243054;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+.navbar {
+    list-style: none;
+}
+
+.navbar li {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.navbar li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: var(--bg_color_1)  ;
+}
+
+.navbar li a:hover {
+    color: var(--secondary_1);
+}
+
+.Book {
+    cursor: pointer;
+    padding: 9px 25px;
+    background-color: var(--bg_color_1);
+    color: var(--secondary_1);
+    border: none;
+    border-radius: 2px;
+    transition: .5s;
+    box-shadow: 5px 1px 10px black;
+}
+
+.Book:hover {
+    box-shadow: 5px 5px 10px black;    
+}
+
+.logo {
+    cursor: pointer;
+    background: var(--bg_color_1);
+    border: 1px solid var(--secondary_2);
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.logo {
+    display: grid;
+    margin: 5px;
+    padding: 5px;
+    place-items: center;
+    font-family: 'Dancing Script', sans-serif;
+    /* font-family: 'Tilt Prism', cursive; */
+    font-weight: 100;
+    font-size: 26px;
+    color: #ffd9e2;
+    text-shadow: 0 0 0 transparent,
+                0 0 10px #ff003c,
+                0 0 20px rgba(255, 0, 60, .5),
+                0 0 40px #ff003c,
+                0 0 100px #ff003c,
+                0 0 200px #ff003c,
+                0 0 300px #ff003c,
+                0 0 500px #ff003c,
+                0 0 1000px #ff003c;
+    animation: animate 3s infinite alternate;
+}
+
+.logo:hover {
+    cursor: pointer;
+    background: var(--bg_color_1);
+    border: 1px solid var(--secondary_1);
+    border-radius: .375rem;
+    text-shadow: 0 0 0 transparent,
+                0 0 10px #0011ff,
+                0 0 20px rgba(0, 17, 255, .5),
+                0 0 40px #0011ff,
+                0 0 100px #0011ff,
+                0 0 200px #0011ff,
+                0 0 300px #0011ff,
+                0 0 500px #0011ff,
+                0 0 1000px #0011ff;
+    animation: animate 3s infinite alternate;
+}
